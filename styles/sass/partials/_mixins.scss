@@ -1,0 +1,5 @@
+@mixin Header($img) {
+    background-image: $img;
+    height: 100vh;
+  }
+
