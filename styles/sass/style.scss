@@ -1,2 +1,6 @@
-@use "./partials/setup";
-@use "./partials/mixins"; 
+// Partials
+@use './partials/setup';
+@use './partials/header';
+@use './partials/main';
+@use './partials/section';
+@use './partials/media-queries'
