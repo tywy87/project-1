@@ -1,12 +1,55 @@
+
+// HEADER
+
 header {
     background-position: center;
     background-size: cover;
     height: 100vh;
-        .headerIndex {
-            background-image: url(/Users/tylerwyles/Desktop/sites/juno/Assignments:Projects/Project01/project-1/assets/header-image.jpg);
+
+        &.headerIndex {
+            background-image: url(../assets/header-image.jpg);
         }
-        .headerContact {
-            background-image: url();
+        &.headerContact {
+            background-image: url(../assets/right-image.jpg);
         }
     
 }
+
+// NAVBAR
+
+nav {
+    display: flex;
+    height: 10%;
+    align-items: center;
+
+    .flexItems {
+        flex-grow: 1;
+    }
+
+    .menuFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+    .logo {
+        display: flex;
+    }
+}
+
+// INDEX HEADER
+
+    .tagLine {
+    height: 100%;
+    width: 20%;
+    padding: 10% 0;
+    }
+
+    
+
+

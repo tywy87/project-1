@@ -30,4 +30,16 @@ body {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: 'Pompiere', cursive;
+    font-size: 8rem;
+    line-height: 92px;
+
+    &.h1Index {
+      font-size: 11rem;
+      line-height: 64px;
+    }
   }
