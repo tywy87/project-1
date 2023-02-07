@@ -19,7 +19,7 @@ header {
 
 nav {
     display: flex;
-    height: 10%;
+    height: 12%;
     align-items: center;
 
     .flexItems {
@@ -31,16 +31,26 @@ nav {
         justify-content: space-between;
         align-items: center;
 
-            a {
-                color: black;
-                text-decoration: none;
-            }
+        ul {
+            margin-left: 174px;
         }
+        
+        li{
+           margin: 0px auto;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
 
     .logo {
         display: flex;
     }
 }
+
+header 
 
 // INDEX HEADER
 

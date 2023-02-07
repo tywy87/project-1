@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Pompiere', cursive;
+    font-size: 8rem;
+    line-height: 92px;
+
+    &.h1Index {
+      font-size: 11rem;
+      line-height: 64px;
+    }
+  }
+
+.logo {
+  font-family: 'Pompiere', cursive;
+  font-size: 3.58rem;
+  letter-spacing: 1.1px;
+}
+
+.menuFlex {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 1px;
+  
+}
+
