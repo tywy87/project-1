@@ -1,3 +1,5 @@
+// HEADER
+
 h1 {
     font-family: 'Pompiere', cursive;
     font-size: 8rem;
@@ -21,6 +23,35 @@ h1 {
   font-weight: 700;
   line-height: 29px;
   letter-spacing: 1px;
-  
+  text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color:black;
+    }
+
+    .homeButton {
+      color: white;
+      background-color: #4C0341;
+      padding: 3px 14px;
+      text-decoration: none;
+    }
+
+    .blogButton {
+      color: white;
+      background-color: #4C0341;
+      padding: 3px 14px;
+      text-decoration: none;
+    }
+
+    .contactButton {
+      color: white;
+      background-color: #4C0341;
+      padding: 3px 14px;
+      text-decoration: none;
+    }
 }
+
+// 
+
 

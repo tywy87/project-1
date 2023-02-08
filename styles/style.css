@@ -274,6 +274,29 @@ h1.h1Index {
   font-weight: 700;
   line-height: 29px;
   letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.menuFlex a {
+  text-decoration: none;
+  color: black;
+}
+.menuFlex .homeButton {
+  color: white;
+  background-color: #4C0341;
+  padding: 3px 14px;
+  text-decoration: none;
+}
+.menuFlex .blogButton {
+  color: white;
+  background-color: #4C0341;
+  padding: 3px 14px;
+  text-decoration: none;
+}
+.menuFlex .contactButton {
+  color: white;
+  background-color: #4C0341;
+  padding: 3px 14px;
+  text-decoration: none;
 }
 
 header {
@@ -319,10 +342,6 @@ nav .menuFlex ul {
 nav .menuFlex li {
   margin: 0px auto;
 }
-nav .menuFlex a {
-  color: black;
-  text-decoration: none;
-}
 nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,4 +352,12 @@ header .tagLine {
   height: 100%;
   width: 20%;
   padding: 10% 0;
+}
+
+.imgHeader {
+  width: 50%;
+  margin-left: auto;
+  position: relative;
+  top: -560px;
+  right: -62px;
 }
