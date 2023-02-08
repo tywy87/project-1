@@ -52,6 +52,45 @@ h1 {
     }
 }
 
-// 
+// INDEX - What is under the sea Section
 
+.underSea{
 
+  h2 {
+    font-family: 'Pompiere', cursive;
+    font-size: 5.2rem;
+    letter-spacing: 1.2px;
+    color: #4C0341;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    background-color: #4C0341;
+    padding: 5px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+// INDEX - New Additions
+
+  .additionContainer {
+    h2 {
+        font-family: 'Pompiere', cursive;
+        font-size: 4.2rem;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+
+      } 
+    
+    a {
+      color: white;
+      background-color: #882C07;
+      padding: 5px 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+      }
+  }
+  

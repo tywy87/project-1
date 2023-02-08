@@ -299,6 +299,28 @@ h1.h1Index {
   text-decoration: none;
 }
 
+.underSea h2 {
+  font-family: "Pompiere", cursive;
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+  color: #4C0341;
+  text-transform: uppercase;
+  text-align: center;
+}
+.underSea a {
+  color: white;
+  background-color: #4C0341;
+  padding: 5px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.additionContainer h2 {
+  font-family: "Pompiere", cursive;
+  font-size: 4.2rem;
+  letter-spacing: 1.3px;
+}
+
 header {
   background-position: center;
   background-size: cover;
@@ -360,4 +382,44 @@ header .tagLine {
   position: relative;
   top: -560px;
   right: -62px;
+}
+
+section.underTheSea {
+  height: 90vh;
+  background-color: #FAE5FF;
+}
+section.underTheSea .underSeaContainer {
+  height: 100%;
+}
+section.underTheSea .underSea {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+}
+section.underTheSea .underSea h2, section.underTheSea .underSea p, section.underTheSea .underSea a {
+  margin-bottom: 20px;
+}
+section.underTheSea .underSea a {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.newAdditions {
+  height: 60vh;
+}
+.newAdditions .additionFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
