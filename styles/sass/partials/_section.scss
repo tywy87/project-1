@@ -146,3 +146,63 @@ section.links {
     }
 
 }
+
+// INDEX - SHOE BANNER
+
+.shoesBanner {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/banner.jpg);
+}
+
+// INDEX - POPULAR THIS MONTH
+
+.sectionPopular {
+    height: 60vh;
+}
+
+.popularFlex {
+    display: flex;
+    height: 100%;
+    padding: 75px 0;
+
+    .popularImgContainer {
+
+    img {
+        box-shadow: 32px 30px 0px 5px rgba(254,111,25,1);
+        -webkit-box-shadow: 32px 30px 0px 5px rgba(254,111,25,1);
+        -moz-box-shadow: 32px 30px 0px 5px rgba(254,111,25,1);
+        }
+    }   
+
+    .popularContainer {
+        width: 63%;
+        margin-left: 10%;
+
+        h2, p, a {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// INDEX - GALLERY
+
+.indexGallery {
+    height: 65vh;
+    background-color: #FAE5FF;
+
+    .galleryFlex {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        // padding: 5% 0;
+        width: calc((100% / 3) - 20px);
+
+        img {
+            margin: 0  10px;
+        }
+    }
+
+    
+}
