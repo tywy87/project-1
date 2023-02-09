@@ -10,13 +10,15 @@ h1 {
       line-height: 64px;
     }
 
-    &.h1Blog {
+    &.h1Blog, &.h1Contact {
       font-size: 8rem;
       line-height: 92px;
       text-transform: uppercase;
       color: #4C0341;
 
     }
+
+  
   }
 
 .logo {
@@ -200,3 +202,34 @@ h1 {
     .comments {
       height: 100vh;
     }
+
+
+
+  // ******************************
+
+  // CONTACT
+
+  // Section - Aside
+
+  .contactSection {
+    height: 100vh;
+    background-color: #FAE5FF;
+
+      email {
+        font-family: 'Pompiere', cursive;
+        font-size: 3rem;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: #4C0341;
+      }
+
+      p {
+        line-height: 25px;
+      }
+    
+  }
+  
+
+// Contact Form
+
+

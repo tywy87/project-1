@@ -10,7 +10,7 @@ header {
             background-image: url(../assets/header-image.jpg);
         }
         &.headerContact {
-            background-image: url(../assets/right-image.jpg);
+            background-image: url(../assets/contact-image.jpg);
         }
 
         &.headerBlog {
@@ -82,5 +82,23 @@ header
         }
 
     }
+
+
+
+
+// CONTACT HEADER
+
+.contactTitle {
+    height: 88%;
+
+    .h1Contact {
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 

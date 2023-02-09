@@ -206,3 +206,62 @@ section.links {
 
     
 }
+
+
+// CONTACT.HTML
+
+// CONTACT FORM
+
+.getInTouch {
+    height: 100vh;
+
+        .contactForm {
+        background-color: white;
+        width: 60%;
+        height: 60%;
+        margin-left: auto;
+    
+        box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+        -webkit-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+        -moz-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+    
+        padding: 10px;
+        text-align: left;
+      }
+      
+      input {
+        width: 90%;
+        border: none;
+        border-bottom: 2px solid #FE6F19;
+      }
+      
+      label {
+        font-weight: bold;
+      }
+
+      textarea {
+        border: 2px solid #FE6F19;
+      }
+      
+      div {
+        margin-bottom: 10px;
+      }
+      
+      button {
+        background: #882C07;
+        color: white;
+        padding: 5px;
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+      }
+
+}
+
+// CONTACT - ASIDE
+
+.getInTouch {
+    aside {
+        margin-right: auto;
+    }
+}

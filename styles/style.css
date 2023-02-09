@@ -261,7 +261,7 @@ h1.h1Index {
   font-size: 11rem;
   line-height: 64px;
 }
-h1.h1Blog {
+h1.h1Blog, h1.h1Contact {
   font-size: 8rem;
   line-height: 92px;
   text-transform: uppercase;
@@ -402,6 +402,21 @@ h1.h1Blog {
   height: 100vh;
 }
 
+.contactSection {
+  height: 100vh;
+  background-color: #FAE5FF;
+}
+.contactSection email {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #4C0341;
+}
+.contactSection p {
+  line-height: 25px;
+}
+
 header {
   background-position: center;
   background-size: cover;
@@ -411,7 +426,7 @@ header.headerIndex {
   background-image: url(../assets/header-image.jpg);
 }
 header.headerContact {
-  background-image: url(../assets/right-image.jpg);
+  background-image: url(../assets/contact-image.jpg);
 }
 header.headerBlog {
   background-image: url(../assets/blog-header.jpg);
@@ -472,6 +487,24 @@ header .tagLine {
   height: 88%;
 }
 .blogTitle .h1Blog {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactTitle {
+  height: 88%;
+}
+.contactTitle .h1Contact {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -691,4 +724,45 @@ section.links .linksContainer ul li {
 }
 .indexGallery .galleryFlex img {
   margin: 0 10px;
+}
+
+.getInTouch {
+  height: 100vh;
+}
+.getInTouch .contactForm {
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  margin-left: auto;
+  box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
+  -webkit-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
+  -moz-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
+  padding: 10px;
+  text-align: left;
+}
+.getInTouch input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #FE6F19;
+}
+.getInTouch label {
+  font-weight: bold;
+}
+.getInTouch textarea {
+  border: 2px solid #FE6F19;
+}
+.getInTouch div {
+  margin-bottom: 10px;
+}
+.getInTouch button {
+  background: #882C07;
+  color: white;
+  padding: 5px;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+}
+
+.getInTouch aside {
+  margin-right: auto;
 }
