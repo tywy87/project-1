@@ -9,6 +9,14 @@ h1 {
       font-size: 11rem;
       line-height: 64px;
     }
+
+    &.h1Blog {
+      font-size: 8rem;
+      line-height: 92px;
+      text-transform: uppercase;
+      color: #4C0341;
+
+    }
   }
 
 .logo {
@@ -162,4 +170,33 @@ h1 {
       font-size: 2rem;
       line-height: 32px;
       color: white;
+    }
+
+    // ******************************************************************
+
+    // BLOG - Aside
+
+    .sidebarFlex {
+      width: 30%;
+      padding: 28px 1px;
+      background-color: white;
+
+      h3 {
+        font-family: 'Pompiere', cursive;
+        font-size: 3rem;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+      }
+
+      li {
+        list-style: disc;
+      }
+    }
+
+
+
+    // BLOG - Comments
+
+    .comments {
+      height: 100vh;
     }

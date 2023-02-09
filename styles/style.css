@@ -261,6 +261,12 @@ h1.h1Index {
   font-size: 11rem;
   line-height: 64px;
 }
+h1.h1Blog {
+  font-size: 8rem;
+  line-height: 92px;
+  text-transform: uppercase;
+  color: #4C0341;
+}
 
 .logo {
   font-family: "Pompiere", cursive;
@@ -377,6 +383,25 @@ h1.h1Index {
   color: white;
 }
 
+.sidebarFlex {
+  width: 30%;
+  padding: 28px 1px;
+  background-color: white;
+}
+.sidebarFlex h3 {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.sidebarFlex li {
+  list-style: disc;
+}
+
+.comments {
+  height: 100vh;
+}
+
 header {
   background-position: center;
   background-size: cover;
@@ -387,6 +412,9 @@ header.headerIndex {
 }
 header.headerContact {
   background-image: url(../assets/right-image.jpg);
+}
+header.headerBlog {
+  background-image: url(../assets/blog-header.jpg);
 }
 
 nav {
@@ -440,11 +468,34 @@ header .tagLine {
   right: -73px;
 }
 
+.blogTitle {
+  height: 88%;
+}
+.blogTitle .h1Blog {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer {
   background-color: #882C07;
 }
 .footer p {
   text-align: center;
+}
+
+main.blog {
+  height: 100vh;
+  background-color: #FAE5FF;
 }
 
 section.underTheSea {
