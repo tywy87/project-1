@@ -16,14 +16,16 @@
     <!-- HEADER -->
     <header class="headerContact">
         <div class="wrapper">
+
+            <!-- NAV -->
             <nav class="navContact">
                 <div class="logo flexItems">
                     <p>Shoe Kloset</p>
                 </div>
                 <ul class="menuFlex flexItems">
-                    <li><a href="#home">home</a></li>
+                    <li><a href="./index.html">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="#blog">blog</a></li>
+                    <li><a href="./blog.html">blog</a></li>
                     <li><a class="contactButton" href="#contact">contact</a></li>
                 </ul>
             </nav>
@@ -32,19 +34,19 @@
             </div>
         </div>
     </header>
-    <!-- SUBMIT Message - FORM -->
+
+    <!-- CONTACT FORM -->
     <section class="contactSection">
         <div class="wrapper">
             <section class="getInTouch">
+                
                 <form action="#" class="contactForm" name="contactForm">
-                    <div class="formFieldName">
+                    <div class="formFlex">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="formFieldEmail">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    
                         <label for="email">Email address</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="Email address" required>
                     </div>
 
                     <div class="formFieldMessage">
@@ -52,17 +54,17 @@
                         <textarea name="userMessage" id="message" cols="30" rows="10" minlength="5" maxlength="200">Message</textarea>
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">SUBMIT</button>
                 </form>
 
     <!-- ASIDE / Contact -->
                 <aside class="contactFlex">
-                    <ul>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                    </ul>
+                    <div class="contactIcon">
+                        <a href=""><i></i></a>
+                        <a href=""><i></i></a>
+                        <a href=""><i></i></a>
+                        <a href=""><i></i></a>
+                    </div>
                     <div>
                         <email>info@email.com</email>
                         <p>123-456-7890</p>
@@ -74,5 +76,11 @@
             </section>
         </div>
     </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrapper">
+            <p>Copyright &#169; 2019 Juno College</p>
+        </div>
+    </footer>
 </body>
 </html>

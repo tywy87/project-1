@@ -4,6 +4,20 @@ main.blog {
     height: 100vh;
     background-color: #FAE5FF;
 
-    
+    .blogPostImg {
+        box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+        -webkit-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+        -moz-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+
+        margin-left: auto;
+        width: 50%;
+
+    }
+
+    .aroundTheWorldContainer {
+        background-color: white;
+        width: 50%;
+        margin-left: auto;
+    }
 
 }

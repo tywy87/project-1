@@ -212,48 +212,72 @@ section.links {
 
 // CONTACT FORM
 
+.contactSection{
+    height: 77vh;
+}
 .getInTouch {
-    height: 100vh;
+    // height: 100vh;
 
         .contactForm {
         background-color: white;
         width: 60%;
         height: 60%;
         margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -180px;
     
         box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
         -webkit-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
         -moz-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
     
-        padding: 10px;
-        text-align: left;
+        
+      }
+
+      .formFlex {
+        display: flex;
+        width: 85%;
+        margin-top: 40px;
       }
       
       input {
         width: 90%;
         border: none;
         border-bottom: 2px solid #FE6F19;
+        padding: 12px 0 9px 24px;
+
+        
       }
       
       label {
         font-weight: bold;
+        display: none;
+      }
+
+      .formFieldMessage {
+        width: 85%;
       }
 
       textarea {
         border: 2px solid #FE6F19;
+        width: 100%;
       }
       
       div {
-        margin-bottom: 10px;
+        margin-bottom: 40px;
       }
       
       button {
         background: #882C07;
         color: white;
         padding: 5px;
-        width: 90%;
-        margin: 0 auto;
+        width: 85%;
+        margin: 0 auto 40px auto;
         border: none;
+        // text-transform: capitalize; - Not Working
       }
 
 }
@@ -263,5 +287,9 @@ section.links {
 .getInTouch {
     aside {
         margin-right: auto;
+    width: 35%;
+    position: relative;
+    bottom: 332px;
+    line-height: 40px;
     }
 }
