@@ -841,3 +841,12 @@ section.links .linksContainer ul li {
   bottom: 332px;
   line-height: 40px;
 }
+
+.comments {
+  height: 100vh;
+  background-color: #FAE5FF;
+}
+.comments .commentsSection {
+  width: 60%;
+  margin-left: auto;
+}
