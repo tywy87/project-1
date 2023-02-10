@@ -277,7 +277,7 @@ section.links {
         width: 85%;
         margin: 0 auto 40px auto;
         border: none;
-        // text-transform: capitalize; - Not Working
+        text-transform: uppercase;
       }
 
 }
@@ -287,9 +287,9 @@ section.links {
 .getInTouch {
     aside {
         margin-right: auto;
-    width: 35%;
-    position: relative;
-    bottom: 332px;
-    line-height: 40px;
+        width: 35%;
+        position: relative;
+        bottom: 332px;
+        line-height: 40px;
     }
 }

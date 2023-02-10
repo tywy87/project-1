@@ -176,33 +176,14 @@ h1 {
 
     // ******************************************************************
 
-    // BLOG - Aside
-
-    .sidebarFlex {
-      width: 30%;
-      padding: 28px 1px;
-      background-color: white;
-
-      h3 {
-        font-family: 'Pompiere', cursive;
-        font-size: 3rem;
-        letter-spacing: 1.3px;
-        text-transform: uppercase;
-      }
-
-      li {
-        list-style: disc;
-      }
-    }
-
-    // BLOG - Shoes around the world
+    // BLOG - Shoes around the world Post
 
     .aroundTheWorldContainer {
 
       padding: 20px;
       
       h2, h3, p {
-        // width: 95%;
+        width: 95%;
         
       }
 
@@ -218,13 +199,29 @@ h1 {
         line-height: 25px;
       }
     }
+    
+    // BLOG - Aside
+    
+    .sidebarFlex {
+    
+      h3 {
+        font-family: 'Pompiere', cursive;
+        font-size: 3rem;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: #4C0341;
+      }
 
-
+      li, p {
+        list-style: disc;
+        line-height: 25px;
+      }
+    }
 
     // BLOG - Comments
 
     .comments {
-      height: 100vh;
+      
     }
 
 
@@ -253,7 +250,5 @@ h1 {
     
   }
   
-
-// Contact Form
 
 
