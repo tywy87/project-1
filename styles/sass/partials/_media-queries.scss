@@ -1,0 +1,149 @@
+
+
+// *********************************** INDEX ***********************************
+
+/* Index
+/* Portrait tablet and small desktops */
+
+@media (max-width: 903px) {
+
+    section.underTheSea .underSea {
+        width: 84%;
+    }
+    // Above code is not reading in css ^ // 
+
+    .manyOptions {
+        .optionContainer {
+            flex-basis: 70%;
+        }
+    }
+
+    .shoesBanner {
+        height: 40vh;
+    }
+
+    .popularContainer {
+        flex-basis: 100%;
+    }
+
+    .indexGallery {
+        height: 50vh;
+    }
+}
+
+/* Index
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 774px) {
+
+    .headerIndex {
+        width: 100%;
+        text-align: center;
+
+
+        .tagLine {
+            width: 100%;
+        }
+
+        .h1Index {
+            height: 100%;
+            padding-top: 20%;
+        }
+
+
+        .imgHeader {
+            display: none;
+        }
+    }
+
+    section {
+        .underTheSea {
+            .underSea {
+                width: 100%;
+            }
+        }
+    }
+
+    /* Index - addition section */
+    .additionFlex {
+        height: 44vh;
+
+        .additionImg {
+            display: none;
+        }
+
+        .additionContainer {
+            width: 100%;
+            text-align: center;
+
+            a {
+                margin: 0 auto;
+            }
+         }
+    }
+
+    /* Index - Too many options section */
+    .manyOptions {
+        .optionContainer {
+            flex-basis: 100%;
+        
+            h2, p {
+                text-align: center;
+            }
+
+            a {
+                margin: 0 auto;
+            }
+        }
+
+        .optionImg {
+            display: none;
+        }
+    }
+
+    /* Index - Links */
+    section.links .linksContainer ul {
+        padding: 0;
+
+        li {
+            padding: 1px 0 0 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    /* Index - Popular this month */ 
+    .popularFlex {
+        padding: 50px 0;
+        flex-direction: column;
+
+        .popularImgContainer {
+            display: none;
+        }
+
+        .popularContainer {
+            width: 100%;
+            margin-left: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+    /*Index - Gallery */
+    .galleryFlex {
+        div:nth-child(2) {
+            display: none;
+        }
+    }
+
+}
+
+/* Index
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

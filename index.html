@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/b46ea4751a.js"></script>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 
 </head>
@@ -25,10 +25,10 @@
                     <p>Shoe Kloset</p>
                 </div>
                 <ul class="menuFlex flexItems">
-                    <li><a class="homeButton" href="./index.html">home</a></li>
+                    <li><a class="homeButton" href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="./blog.html">blog</a></li>
-                    <li><a href="./contact.html">contact</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <div class="tagLine">
@@ -85,22 +85,23 @@
             <div class="linksContainer">
                 <ul>
                     <li>
-                        <i class="fa-regular fa-location-arrow"></i>
+                        <!-- <i class="fa fa-location-arrow" aria-hidden="true"></i> -->
+                        <!-- tried in li to display: flex with flex:wrap and could not line up icons -->
                         <h3>locations</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab modi quidem porro impedit a commodi.</p>
                     </li>
                     <li>
-                        <i></i>
+                        <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
                         <h3>community</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab modi quidem porro impedit a commodi.</p>
                     </li>
                     <li>
-                        <i></i>
+                        <!-- <i class="fa fa-file-o" aria-hidden="true"></i> -->
                         <h3>blog</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab modi quidem porro impedit a commodi.</p>
                     </li>
                     <li>
-                        <i></i>
+                        <!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
                         <h3>get in touch</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab modi quidem porro impedit a commodi.</p>
                     </li>
@@ -131,15 +132,21 @@
     <!-- GALLERY -->
     <section class="indexGallery">
         <div class="wrapper">
-            <div class="galleryFlex">
-                <img src="./assets/gallery-image-1.jpg" alt="person sitting on edge of building roof looking down at their yellow shoes">
-                <img src="./assets/gallery-image-3.jpg" alt="pair brown leather heel boots posing on steps">
-                <img src="./assets/gallery-image-2.jpg" alt="shoe rack with sneakers">
+           <div class="galleryFlex">
+                <div class="column">
+                    <img src="./assets/gallery-image-1.jpg" alt="person sitting on edge of building roof looking down at their yellow shoes">
+                </div>
+                <div class="column">
+                    <img src="./assets/gallery-image-3.jpg" alt="pair brown leather heel boots posing on steps">
+                </div>
+                <div class="column">
+                    <img src="./assets/gallery-image-2.jpg" alt="shoe rack with sneakers">
+                </div>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <div class="wrapper">
             <p>Copyright &#169; 2019 Juno College</p>
         </div>

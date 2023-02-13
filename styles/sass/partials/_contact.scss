@@ -1,0 +1,128 @@
+// CONTACT.HTML
+@use './variables' as *;
+
+// CONTACT HEADER
+
+.headerContact {
+    .navContact {
+      padding-top: 45px;
+    }
+}
+.contactTitle {
+  height: 75vh;
+
+    .h1Contact {
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+// CONTACT FORM
+
+.contactSection{
+    height: 77vh;
+}
+.getInTouch {
+    // height: 100vh;
+
+        .contactForm {
+        background-color: $white;
+        width: 60%;
+        height: 60%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -180px;
+    
+        box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+        -webkit-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+        -moz-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
+    
+        
+      }
+
+      .nameAndEmailFlex {
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        margin: 60px auto 0;
+      }
+
+      .formFieldName, .formFieldEmail {
+        flex-basis: 50%;
+      }
+
+      .formFlex {
+        display: flex;
+        width: 85%;
+        margin-top: 40px;
+      }
+      
+      input {
+        width: 90%;
+        border: none;
+        border-bottom: 2px solid $orange;
+        padding: 12px 0 9px 24px;
+      }
+      
+      label {
+        font-weight: bold;
+        
+      }
+
+      .formFieldMessage {
+        width: 85%;
+      }
+
+      textarea {
+        border: 2px solid $orange;
+        width: 100%;
+        resize: none;
+      }
+      
+      div {
+        margin-bottom: 40px;
+      }
+      
+      button {
+        background: $brownRed;
+        color: $white;
+        padding: 5px;
+        width: 85%;
+        margin: 0 auto 40px auto;
+        border: none;
+        text-transform: uppercase;
+      }
+
+}
+
+// CONTACT - ASIDE
+
+.getInTouch {
+    aside {
+        margin-right: auto;
+        width: 35%;
+        position: relative;
+        bottom: 332px;
+        line-height: 40px;
+    }
+}
+
+.contactFlex {
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 20px;
+      color: $plum;
+      
+    }
+  }
+}

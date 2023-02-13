@@ -1,8 +1,73 @@
-@mixin Header($img) {
-    background-image: url($img);
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+// @mixin Header($img) {
+//     background-image: url($img);
+//     height: 100vh;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
+
+@use './variables' as *;
+
+// HEADER
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+      &.headerIndex {
+          background-image: url(../assets/header-image.jpg);
+          height: 100vh;
+      }
+      &.headerContact {
+          min-height: 80vh;
+          
+          background-image: url(../assets/contact-image.jpg);
+      }
+
+      &.headerBlog {
+          background-image: url(../assets/blog-header.jpg);
+          height: 100vh;
+      }
+  
+}
+
+// NAVBAR
+
+nav {
+  display: flex;
+  height: 12%;
+  align-items: center;
+
+  .flexItems {
+      flex-grow: 1;
   }
 
+  .menuFlex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+          margin-left: 174px;
+      }
+      
+      li{
+         margin: 0px auto;
+      }
+  }
+
+  .logo {
+      display: flex;
+  }
+}
+
+// FOOTER
+
+footer {
+  background-color: $brownRed;
+  
+  p {
+      text-align: center;
+  }
+}

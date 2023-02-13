@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -21,10 +23,10 @@
                     <p>Shoe Kloset</p>
                 </div>
                 <ul class="menuFlex flexItems">
-                    <li><a href="./index.html">home</a></li>
+                    <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a class="blogButton" href="./blog.html">blog</a></li>
-                    <li><a href="./contact.html">contact</a></li>
+                    <li><a class="blogButton" href="#blog">blog</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <div class="blogTitle">
@@ -35,22 +37,11 @@
     <!-- MAIN -->
     <main class="blog">
         <div class="wrapper">
-
-    <!-- BLOG IMG/POST -->
-            
-            <figure class="blogPostImg"><img src="./assets/blog-post-image.jpg" alt="two people walking in matching outfits"></figure>
-            <div class="aroundTheWorldContainer">
-                <h2>shoes around the world</h2>
-                <h3>Monday May 4th, 2019 by Tyler</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis voluptatibus voluptates laboriosam quaerat officia possimus distinctio harum, sunt expedita ipsa in nulla, iure voluptate, explicabo eaque ut saepe fuga cupiditate rerum dolor temporibus et? Asperiores et omnis facilis officia!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci minus et, aliquid minima earum hic atque consequatur, rem cum sed vel similique, accusamus nihil. Itaque eveniet optio natus sint soluta doloribus ab provident alias. Et itaque, tempore obcaecati quod esse iste quasi quas dolorem est sapiente unde id provident. Aut odit ex architecto quas illo quisquam, voluptate quaerat perferendis nostrum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam placeat est commodi aliquam facilis voluptates obcaecati minima, sunt enim ex. Natus, labore voluptates! Asperiores, nam soluta! Culpa asperiores ipsa tenetur repudiandae. Obcaecati omnis expedita, ipsum vitae dolor quasi eius.</p>
-            </div>
-
-    <!-- ASIDE -->
-
+            <!-- ASIDE -->
             <aside class="sidebarFlex">
-                <div class="container"><img src="./assets/sidebar-image.jpg" alt="shoes jumping in puddle"></div>
+                <div class="asideContainer">
+                    <img src="./assets/sidebar-image.jpg" alt="shoes jumping in puddle">
+                </div>
                 <div class="sidebarContainer">
                     <div>
                         <h3>Any Weather</h3>
@@ -68,55 +59,67 @@
                     </div>
                 </div>
             </aside>
-            
+            <div class="blogPostImg"><img src="./assets/blog-post-image.jpg" alt="two people walking in matching outfits"></div>
+            <div class="aroundTheWorldContainer">
+                <h2>shoes around the world</h2>
+                <h3>Monday May 4th, 2019 by Tyler</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis voluptatibus voluptates laboriosam quaerat officia possimus distinctio harum, sunt expedita ipsa in nulla, iure voluptate, explicabo eaque ut saepe fuga cupiditate rerum dolor temporibus et? Asperiores et omnis facilis officia!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex veritatis labore culpa illo esse, eos, cum possimus dolorum excepturi beatae tenetur eum ad deleniti hic velit quas nam ipsum facilis impedit molestias, voluptatum autem.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex veritatis labore culpa illo esse, eos, cum possimus dolorum excepturi beatae tenetur eum ad deleniti hic velit quas nam ipsum facilis impedit molestias, voluptatum autem.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur itaque quas similique quia quisquam tempore eligendi consequatur vero nostrum inventore. Atque cupiditate eaque odio delectus nobis necessitatibus error, culpa excepturi soluta quibusdam!</p>
+            </div>
         </div>
     </main>
     <!-- COMMENTS -->
     <section class="comments">
         <div class="wrapper">
-            <div class="commentsSection">
-                <div class="commentsContainer">
-                    <h2>comments:</h2>
-                    <div class="commentOne">
-                        <div><img src="./assets/comment-1.jpg" alt=""></div>
-                        <div class="commentFlex">
-                            <h3>Tuesday November 21th, 2019 by Jeremy</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolorem voluptatem pariatur! Reprehenderit cumque ullam sequi placeat odit in impedit?</p>
-                        </div>
-                    </div>
-                    <div class="commentTwo">
-                        <div><img src="./assets/comment-2.jpg" alt=""></div>
-                        <div class="commentFlex">
-                            <h3>Wednesday November 10th, 2019 by Julia</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias quod nihil dolorem earum praesentium consequuntur iure doloremque non, cupiditate, placeat sint?</p>
-                        </div>
+            <div class="commentsContainer">
+                <h2>comments:</h2>
+                <div class="commentOne">
+                    <div><img src="./assets/comment-1.jpg" alt=""></div>
+                    <div class="commentFlex">
+                        <h3>Tuesday November 21th, 2019 by Jeremy</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolorem voluptatem pariatur! Reprehenderit cumque ullam sequi placeat odit in impedit?</p>
                     </div>
                 </div>
-                <div class="blogForm">
-                    
-                    <!-- Not Finished / check Contact form for styling -->
-                            <form action="">
-                                <fieldset>
-                                    <div class="flexbox">
-                                        <label class="sr-only" for="name">Name</label>
-                                        <input id="name" type="name" placeholder="Name">
-                                        <label class="sr-only" for="email">Email address</label>
-                                        <input id="email" type="email" placeholder="Email address">
-                                    </div>
-                                    <label class="sr-only" for="comment">Comment</label>
-                                    <textarea id="comment" type="comment">Comment</textarea>
-                                </fieldset>
-                                <button type="submit">Post Comment</button>
-                            </form>
-                    
+                <div class="commentTwo">
+                    <div><img src="./assets/comment-2.jpg" alt=""></div>
+                    <div class="commentFlex">
+                        <h3>Wednesday November 10th, 2019 by Julia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias quod nihil dolorem earum praesentium consequuntur iure doloremque non, cupiditate, placeat sint?</p>
+                    </div>
+                </div>
             </div>
+
+        <!-- COMMENT FORM -->
+            <div class="blogForm">
+                <form action="#" class="contactForm" name="contactForm">
+
+                    <div class="nameAndEmailFlex">
+                        <div class="formFieldName">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Name"  required>
+                        </div>
+
+                        <div class="formFieldEmail">
+                            <label for="email" class="sr-only">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="Email address" required>
+                        </div>
+                    </div>
+
+                    <div class="formFieldMessage">
+                        <label for="message"></label>
+                        <textarea name="userMessage" id="message" cols="30" rows="10" minlength="5" maxlength="200">Comment</textarea>
+                    </div>
+
+                    <button type="submit">Post Comment</button>
+                </form>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <div class="wrapper">
-            <p>Copyright &#169; 2019 Juno College</p>
+            <p>Copyright C 2019 Juno College</p>
         </div>
     </footer>
 </body>

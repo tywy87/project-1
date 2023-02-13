@@ -260,6 +260,7 @@ h1 {
 h1.h1Index {
   font-size: 11rem;
   line-height: 64px;
+  color: #4C0341;
 }
 h1.h1Blog, h1.h1Contact {
   font-size: 8rem;
@@ -287,19 +288,19 @@ h1.h1Blog, h1.h1Contact {
   color: black;
 }
 .menuFlex .homeButton {
-  color: white;
+  color: #FFF;
   background-color: #4C0341;
   padding: 3px 14px;
   text-decoration: none;
 }
 .menuFlex .blogButton {
-  color: white;
+  color: #FFF;
   background-color: #4C0341;
   padding: 3px 14px;
   text-decoration: none;
 }
 .menuFlex .contactButton {
-  color: white;
+  color: #FFF;
   background-color: #4C0341;
   padding: 3px 14px;
   text-decoration: none;
@@ -314,7 +315,7 @@ h1.h1Blog, h1.h1Contact {
   text-align: center;
 }
 .underSea a {
-  color: white;
+  color: #FFF;
   background-color: #4C0341;
   padding: 5px 14px;
   text-decoration: none;
@@ -328,7 +329,7 @@ h1.h1Blog, h1.h1Contact {
   text-transform: uppercase;
 }
 .additionContainer a {
-  color: white;
+  color: #FFF;
   background-color: #882C07;
   padding: 8px 14px;
   text-decoration: none;
@@ -342,7 +343,7 @@ h1.h1Blog, h1.h1Contact {
   text-transform: uppercase;
 }
 .manyOptions a {
-  color: white;
+  color: #FFF;
   background-color: #882C07;
   padding: 8px 14px;
   text-decoration: none;
@@ -369,25 +370,34 @@ h1.h1Blog, h1.h1Contact {
   line-height: 25px;
 }
 .popularContainer a {
-  color: white;
+  color: #FFF;
   background-color: #882C07;
   padding: 8px 14px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-footer p {
+.footer p {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 32px;
-  color: white;
+  color: #FFF;
+}
+
+.sidebarFlex h3 {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  letter-spacing: 1.3px;
+  color: #4C0341;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.sidebarFlex li {
+  list-style: disc;
 }
 
 .aroundTheWorldContainer {
   padding: 20px;
-}
-.aroundTheWorldContainer h2, .aroundTheWorldContainer h3, .aroundTheWorldContainer p {
-  width: 95%;
 }
 .aroundTheWorldContainer h2 {
   font-family: "Pompiere", cursive;
@@ -395,21 +405,14 @@ footer p {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   padding: 20px 0 10px 0;
+  color: #4C0341;
 }
 .aroundTheWorldContainer p {
   line-height: 25px;
 }
 
-.sidebarFlex h3 {
-  font-family: "Pompiere", cursive;
-  font-size: 3rem;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
-  color: #4C0341;
-}
-.sidebarFlex li, .sidebarFlex p {
-  list-style: disc;
-  line-height: 25px;
+.comments {
+  height: 100vh;
 }
 
 .contactSection {
@@ -427,20 +430,37 @@ footer p {
   line-height: 25px;
 }
 
+.commentsContainer h2 {
+  font-family: "Pompiere", cursive;
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #4C0341;
+}
+.commentsContainer p {
+  line-height: 25px;
+}
+
+.blogForm input, .blogForm textarea {
+  background-color: #FAE5FF;
+}
+
 header {
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  background-repeat: no-repeat;
 }
 header.headerIndex {
   background-image: url(../assets/header-image.jpg);
+  height: 100vh;
 }
 header.headerContact {
-  height: 80vh;
+  min-height: 80vh;
   background-image: url(../assets/contact-image.jpg);
 }
 header.headerBlog {
   background-image: url(../assets/blog-header.jpg);
+  height: 100vh;
 }
 
 nav {
@@ -480,7 +500,14 @@ nav .logo {
   display: flex;
 }
 
-header .tagLine {
+footer {
+  background-color: #882C07;
+}
+footer p {
+  text-align: center;
+}
+
+.tagLine {
   height: 100%;
   width: 20%;
   padding: 10% 0;
@@ -492,86 +519,6 @@ header .tagLine {
   position: relative;
   top: -560px;
   right: -73px;
-}
-
-.blogTitle {
-  height: 88%;
-}
-.blogTitle .h1Blog {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contactTitle {
-  height: 88%;
-}
-.contactTitle .h1Contact {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer {
-  background-color: #882C07;
-}
-footer p {
-  text-align: center;
-}
-
-main.blog {
-  height: 100vh;
-  background-color: #FAE5FF;
-}
-main.blog .blogPostImg {
-  margin-left: auto;
-  width: 60%;
-  position: relative;
-  left: 104px;
-  top: -320px;
-}
-main.blog .blogPostImg img {
-  box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
-  -webkit-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
-  -moz-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
-}
-main.blog .aroundTheWorldContainer {
-  background-color: white;
-  width: 59%;
-  margin-left: auto;
-  padding: 30px 66px;
-  position: relative;
-  top: -300px;
-  right: -63px;
-}
-main.blog .aroundTheWorldContainer p {
-  margin: 20px 0;
-}
-
-.sidebarFlex {
-  width: 30%;
-  padding: 28px 1px;
-  background-color: white;
-  position: relative;
-  bottom: 1111px;
 }
 
 section.underTheSea {
@@ -763,10 +710,236 @@ section.links .linksContainer ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: calc(33.3333333333% - 20px);
+  padding: 5% 0;
 }
-.indexGallery .galleryFlex img {
-  margin: 0 10px;
+.indexGallery .galleryFlex .column {
+  margin: 2%;
+}
+
+.blogTitle {
+  height: 88%;
+}
+.blogTitle .h1Blog {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.blog {
+  height: 100vh;
+  background-color: #FAE5FF;
+}
+main.blog .blogPostImg {
+  margin-left: auto;
+  width: 60%;
+  position: relative;
+  left: 64px;
+  bottom: 961px;
+}
+main.blog .blogPostImg img {
+  box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
+  -webkit-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
+  -moz-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
+}
+main.blog .aroundTheWorldContainer {
+  background-color: #FFF;
+  width: 63%;
+  margin-left: auto;
+  padding: 30px 66px;
+  position: relative;
+  bottom: 964px;
+  right: -63px;
+}
+main.blog .aroundTheWorldContainer p {
+  margin: 20px 0;
+}
+
+.sidebarFlex {
+  width: 23%;
+  padding: 1px 40px;
+  background-color: #FFF;
+  line-height: 25px;
+  position: relative;
+  top: 7%;
+}
+.sidebarFlex div {
+  margin-bottom: 25px;
+}
+.sidebarFlex .asideContainer {
+  width: 170%;
+}
+.sidebarFlex .asideContainer img {
+  position: relative;
+  right: 33%;
+  bottom: 15px;
+}
+.sidebarFlex ul {
+  margin-left: 7%;
+}
+
+.comments {
+  height: 100vh;
+  background-color: #FAE5FF;
+}
+.comments .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.comments .commentsContainer {
+  width: 59%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+}
+.comments .commentsContainer .commentOne, .comments .commentsContainer .commentTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+.comments .commentsContainer .commentOne img, .comments .commentsContainer .commentTwo img {
+  width: 234px;
+  padding: 11px;
+}
+.comments .commentsContainer .commentOne .commentFlex, .comments .commentsContainer .commentTwo .commentFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.comments .commentsSection {
+  width: 60%;
+  margin-left: auto;
+}
+
+.blogForm {
+  width: 60%;
+  height: 60%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.nameAndEmailFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 0;
+}
+
+.formFieldName, .formFieldEmail {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin-top: 40px;
+}
+
+input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #FE6F19;
+  padding: 12px 0 9px 24px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  border: 2px solid #FE6F19;
+  width: 95%;
+  resize: none;
+  padding: 20px 0 0 20px;
+}
+
+div {
+  margin-bottom: 25px;
+}
+
+button {
+  background: #4C0341;
+  color: #FFF;
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto 40px auto;
+  border: none;
+  text-transform: uppercase;
+}
+
+.headerContact .navContact {
+  padding-top: 45px;
+}
+
+.contactTitle {
+  height: 75vh;
+}
+.contactTitle .h1Contact {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contactSection {
@@ -774,7 +947,7 @@ section.links .linksContainer ul li {
 }
 
 .getInTouch .contactForm {
-  background-color: white;
+  background-color: #FFF;
   width: 60%;
   height: 60%;
   margin-left: auto;
@@ -797,6 +970,20 @@ section.links .linksContainer ul li {
   -webkit-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
   -moz-box-shadow: -32px 30px 0px 5px rgb(254, 111, 25);
 }
+.getInTouch .nameAndEmailFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px auto 0;
+}
+.getInTouch .formFieldName, .getInTouch .formFieldEmail {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
 .getInTouch .formFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,7 +999,6 @@ section.links .linksContainer ul li {
 }
 .getInTouch label {
   font-weight: bold;
-  display: none;
 }
 .getInTouch .formFieldMessage {
   width: 85%;
@@ -820,13 +1006,14 @@ section.links .linksContainer ul li {
 .getInTouch textarea {
   border: 2px solid #FE6F19;
   width: 100%;
+  resize: none;
 }
 .getInTouch div {
   margin-bottom: 40px;
 }
 .getInTouch button {
   background: #882C07;
-  color: white;
+  color: #FFF;
   padding: 5px;
   width: 85%;
   margin: 0 auto 40px auto;
@@ -842,11 +1029,137 @@ section.links .linksContainer ul li {
   line-height: 40px;
 }
 
-.comments {
-  height: 100vh;
-  background-color: #FAE5FF;
+.contactFlex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.comments .commentsSection {
-  width: 60%;
-  margin-left: auto;
+.contactFlex ul li {
+  margin-right: 20px;
+  color: #4C0341;
 }
+
+/* Index
+/* Portrait tablet and small desktops */
+@media (max-width: 903px) {
+  section.underTheSea .underSea {
+    width: 84%;
+  }
+  .manyOptions .optionContainer {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .shoesBanner {
+    height: 40vh;
+  }
+  .popularContainer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .indexGallery {
+    height: 50vh;
+  }
+}
+/* Index
+/* Landscape phone to portrait tablet */
+@media (max-width: 774px) {
+  .headerIndex {
+    width: 100%;
+    text-align: center;
+  }
+  .headerIndex .tagLine {
+    width: 100%;
+  }
+  .headerIndex .h1Index {
+    height: 100%;
+    padding-top: 20%;
+  }
+  .headerIndex .imgHeader {
+    display: none;
+  }
+  section .underTheSea .underSea {
+    width: 100%;
+  }
+  /* Index - addition section */
+  .additionFlex {
+    height: 44vh;
+  }
+  .additionFlex .additionImg {
+    display: none;
+  }
+  .additionFlex .additionContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .additionFlex .additionContainer a {
+    margin: 0 auto;
+  }
+  /* Index - Too many options section */
+  .manyOptions .optionContainer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .manyOptions .optionContainer h2, .manyOptions .optionContainer p {
+    text-align: center;
+  }
+  .manyOptions .optionContainer a {
+    margin: 0 auto;
+  }
+  .manyOptions .optionImg {
+    display: none;
+  }
+  /* Index - Links */
+  section.links .linksContainer ul {
+    padding: 0;
+  }
+  section.links .linksContainer ul li {
+    padding: 1px 0 0 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* Index - Popular this month */
+  .popularFlex {
+    padding: 50px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popularFlex .popularImgContainer {
+    display: none;
+  }
+  .popularFlex .popularContainer {
+    width: 100%;
+    margin-left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*Index - Gallery */
+  .galleryFlex div:nth-child(2) {
+    display: none;
+  }
+}
+/* Index
+/* Landscape phones and down */

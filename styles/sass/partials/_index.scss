@@ -1,8 +1,29 @@
-// INDEX - Under The Sea
+
+@use './variables' as *;
+
+//HEADER
+
+.tagLine {
+    height: 100%;
+    width: 20%;
+    padding: 10% 0;
+    }
+
+    .imgHeader {
+        width: 50%;
+        margin-left: auto;
+        position: relative;
+        top: -560px;
+        right: -73px;
+        // Struggling understanding how position works*************
+    }
+
+
+//UNDER THE SEA
 
 section.underTheSea {
     height: 90vh;
-    background-color: #FAE5FF;
+    background-color: $paleMauve;
 
     .underSeaContainer {
         height: 100%;
@@ -124,7 +145,7 @@ section.underTheSea {
 
 section.links {
     height: 65vh;
-    background-color: #FAE5FF;
+    background-color: $paleMauve;
 
     .linksContainer {
         height: 100%;
@@ -190,119 +211,23 @@ section.links {
 
 .indexGallery {
     height: 65vh;
-    background-color: #FAE5FF;
+    background-color: $paleMauve;
 
     .galleryFlex {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        // padding: 5% 0;
-        width: calc((100% / 3) - 20px);
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         padding: 5% 0;
+        //  width: calc((100% / 3) - 20px);
 
-        img {
-            margin: 0  10px;
+        .column {
+            margin: 2%;
         }
-    }
+     }
+}
+
+
+
 
     
-}
 
-
-// CONTACT.HTML
-
-// CONTACT FORM
-
-.contactSection{
-    height: 77vh;
-}
-.getInTouch {
-    // height: 100vh;
-
-        .contactForm {
-        background-color: white;
-        width: 60%;
-        height: 60%;
-        margin-left: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -180px;
-    
-        box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
-        -webkit-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
-        -moz-box-shadow: -32px 30px 0px 5px rgba(254,111,25,1);
-    
-        
-      }
-
-      .formFlex {
-        display: flex;
-        width: 85%;
-        margin-top: 40px;
-      }
-      
-      input {
-        width: 90%;
-        border: none;
-        border-bottom: 2px solid #FE6F19;
-        padding: 12px 0 9px 24px;
-
-        
-      }
-      
-      label {
-        font-weight: bold;
-        display: none;
-      }
-
-      .formFieldMessage {
-        width: 85%;
-      }
-
-      textarea {
-        border: 2px solid #FE6F19;
-        width: 100%;
-      }
-      
-      div {
-        margin-bottom: 40px;
-      }
-      
-      button {
-        background: #882C07;
-        color: white;
-        padding: 5px;
-        width: 85%;
-        margin: 0 auto 40px auto;
-        border: none;
-        text-transform: uppercase;
-      }
-
-}
-
-// CONTACT - ASIDE
-
-.getInTouch {
-    aside {
-        margin-right: auto;
-        width: 35%;
-        position: relative;
-        bottom: 332px;
-        line-height: 40px;
-    }
-}
-
-
-// BLOG - Commments Form
-
-.comments {
-    height: 100vh;
-    background-color: #FAE5FF;
-    
-    .commentsSection{
-    width: 60%;
-    margin-left: auto;
-    }
-}

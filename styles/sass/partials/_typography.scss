@@ -1,3 +1,6 @@
+@use './variables' as *;
+
+
 // HEADER
 
 h1 {
@@ -8,13 +11,14 @@ h1 {
     &.h1Index {
       font-size: 11rem;
       line-height: 64px;
+      color: $plum;
     }
 
     &.h1Blog, &.h1Contact {
       font-size: 8rem;
       line-height: 92px;
       text-transform: uppercase;
-      color: #4C0341;
+      color: $plum;
 
     }
 
@@ -41,22 +45,22 @@ h1 {
     }
 
     .homeButton {
-      color: white;
-      background-color: #4C0341;
+      color: $white;
+      background-color: $plum;
       padding: 3px 14px;
       text-decoration: none;
     }
 
     .blogButton {
-      color: white;
-      background-color: #4C0341;
+      color: $white;
+      background-color: $plum;
       padding: 3px 14px;
       text-decoration: none;
     }
 
     .contactButton {
-      color: white;
-      background-color: #4C0341;
+      color: $white;
+      background-color: $plum;
       padding: 3px 14px;
       text-decoration: none;
     }
@@ -70,14 +74,14 @@ h1 {
     font-family: 'Pompiere', cursive;
     font-size: 5.2rem;
     letter-spacing: 1.2px;
-    color: #4C0341;
+    color: $plum;
     text-transform: uppercase;
     text-align: center;
   }
 
   a {
-    color: white;
-    background-color: #4C0341;
+    color: $white;
+    background-color: $plum;
     padding: 5px 14px;
     text-decoration: none;
     text-transform: uppercase;
@@ -96,8 +100,8 @@ h1 {
       } 
     
     a {
-      color: white;
-      background-color: #882C07;
+      color: $white;
+      background-color: $brownRed;
       padding: 8px 14px;
       text-decoration: none;
       text-transform: uppercase;
@@ -117,8 +121,8 @@ h1 {
       } 
     
     a {
-      color: white;
-      background-color: #882C07;
+      color: $white;
+      background-color: $brownRed;
       padding: 8px 14px;
       text-decoration: none;
       text-transform: uppercase;
@@ -157,8 +161,8 @@ h1 {
       }
 
       a {
-        color: white;
-        background-color: #882C07;
+        color: $white;
+        background-color: $brownRed;
         padding: 8px 14px;
         text-decoration: none;
         text-transform: uppercase; 
@@ -167,25 +171,44 @@ h1 {
 
     // FOOTER
 
-    footer p {
+    .footer p {
       font-family: 'Lato', sans-serif;
       font-size: 2rem;
       line-height: 32px;
-      color: white;
+      color: $white;
     }
 
     // ******************************************************************
 
-    // BLOG - Shoes around the world Post
+    // BLOG - Aside
+
+    .sidebarFlex {
+      
+      h3 {
+        font-family: 'Pompiere', cursive;
+        font-size: 3rem;
+        letter-spacing: 1.3px;
+        color: $plum;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      li {
+        list-style: disc;
+
+      }
+    }
+
+    // BLOG - Shoes around the world
 
     .aroundTheWorldContainer {
 
       padding: 20px;
       
-      h2, h3, p {
-        width: 95%;
+      // h2, h3, p {
+      //   // width: 95%;
         
-      }
+      // }
 
       h2 {
         font-family: 'Pompiere', cursive;
@@ -193,35 +216,20 @@ h1 {
         letter-spacing: 1.2px;
         text-transform: uppercase;
         padding: 20px 0 10px 0;
+        color: $plum;
       }
 
       p {
         line-height: 25px;
       }
     }
-    
-    // BLOG - Aside
-    
-    .sidebarFlex {
-    
-      h3 {
-        font-family: 'Pompiere', cursive;
-        font-size: 3rem;
-        letter-spacing: 1.3px;
-        text-transform: uppercase;
-        color: #4C0341;
-      }
 
-      li, p {
-        list-style: disc;
-        line-height: 25px;
-      }
-    }
+
 
     // BLOG - Comments
 
     .comments {
-      
+      height: 100vh;
     }
 
 
@@ -230,18 +238,20 @@ h1 {
 
   // CONTACT
 
+  // ******************************
+
   // Section - Aside
 
   .contactSection {
     height: 100vh;
-    background-color: #FAE5FF;
+    background-color: $paleMauve;
 
       email {
         font-family: 'Pompiere', cursive;
         font-size: 3rem;
         letter-spacing: 1.3px;
         text-transform: uppercase;
-        color: #4C0341;
+        color: $plum;
       }
 
       p {
@@ -250,5 +260,30 @@ h1 {
     
   }
   
+// Comment section
+
+.commentsContainer {
+  h2 {
+    font-family: 'Pompiere', cursive;
+    font-size: 5.2rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    // padding: 20px 0 10px 0;
+    color: $plum;
+  }
+
+  p {
+    line-height: 25px;
+  }
+}
+
+// Contact Form
+
+.blogForm {
+  input, textarea {
+    background-color: $paleMauve;
+  }
+
+}
 
 
