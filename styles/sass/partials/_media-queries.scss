@@ -1,4 +1,4 @@
-
+@use './variables' as *;
 
 // *********************************** INDEX ***********************************
 
@@ -65,6 +65,18 @@
     }
 
     /* Index - addition section */
+
+    .newAdditions {
+        background-image: url(../assets/left-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .additionFlex .additionContainer {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 15px;
+        }
+    }
+
     .additionFlex {
         height: 44vh;
 
@@ -83,10 +95,20 @@
     }
 
     /* Index - Too many options section */
-    .manyOptions {
-        .optionContainer {
+    .manyOptions  {
+        background-image: url(../assets/right-image.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 52vh;   
+        }
+    
+        .manyOptions .optionContainer {
             flex-basis: 100%;
-        
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 15px;
+            flex-basis: 100%;
+            align-items: center;
+
             h2, p {
                 text-align: center;
             }
@@ -94,6 +116,7 @@
             a {
                 margin: 0 auto;
             }
+
         }
 
         .optionImg {
@@ -137,13 +160,133 @@
     /*Index - Gallery */
     .galleryFlex {
         div:nth-child(2) {
-            display: none;
-        }
+             display: none;
+       }
     }
+   
 
-}
+
+
+
 
 /* Index
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+    .headerIndex {
+        .index {
+          padding-top: 24px;
+          background-color: #C14242;
+          opacity: 0.8;
+          
+        }
+        .logo.flexItems {
+            text-shadow: 1px 1px 0px burlywood;
+        }
+
+        .menuFlex {
+            flex-wrap: wrap;
+            flex-shrink: 1;
+            border-left: 2px black solid;
+            position: relative;
+            bottom: 10%;
+        }
+
+        .h1Index {
+            height: 100%;
+            padding-top: 20%;
+            font-size: 8rem;
+            line-height: 88px;
+            text-shadow: 1px 1px 0px lightgrey;
+          }
+    }
+
+    /* Under the Sea */
+    section.underTheSea {
+        height: 75vh;
+
+        h2 {
+            font-size: 4.2rem;
+        }
+
+        .underSea a {
+            width: 44%;
+        }
+    }
+
+    /* New Additions */
+    .newAdditions {
+        background-image: url(../assets/left-image.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .additionFlex .additionContainer {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 15px;
+        }
+    }
+
+    /* Too Many Options */
+    .manyOptions {
+        background-image: url(../assets/right-image.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 52vh;
+
+        .optionContainer {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 15px;
+        }
+    }
+
+    /* Links */
+    .linksContainer {
+
+        h3 {
+            font-size: 3rem;
+            letter-spacing: 0.6px;
+            text-align: left;
+        }
+
+        p {
+            line-height: 22px;
+            margin: 8px;
+            text-align: left;
+        }
+
+        li:nth-child(1) {
+            border-right: 2px solid rgba(18, 15, 15, 0.1);
+            border-bottom: 2px solid rgba(18, 15, 15, 0.1);
+        }
+
+        li:nth-child(2) {
+           border-bottom: 2px solid rgba(18, 15, 15, 0.1);
+        }
+
+        li:nth-child(3) {
+            border-right: 2px solid rgba(18, 15, 15, 0.1);
+        }
+
+    }
+
+    /* Background Shoes */
+    .shoesBanner {
+        height: 30vh;
+    }
+
+    /*Popular this month */
+    .sectionPopular {
+        height: 75vh;
+
+        h2 {
+            font-size: 4rem;
+        }
+    }
+
+    /* Index Gallery */
+    .indexGallery {
+        height: 32vh;
+    }
+
+
 }
