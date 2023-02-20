@@ -720,6 +720,45 @@ section.links .linksContainer ul li {
   margin: 2%;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal .close {
+  color: #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .close:hover,
+.modal .close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .blogTitle {
   height: 88%;
 }
@@ -1041,246 +1080,4 @@ button {
 .contactFlex ul li {
   margin-right: 20px;
   color: #4C0341;
-}
-
-/* Index
-/* Portrait tablet and small desktops */
-@media (max-width: 903px) {
-  section.underTheSea .underSea {
-    width: 84%;
-  }
-  .manyOptions .optionContainer {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-  }
-  .shoesBanner {
-    height: 40vh;
-  }
-  .popularContainer {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .indexGallery {
-    height: 50vh;
-  }
-}
-/* Index
-/* Landscape phone to portrait tablet */
-@media (max-width: 774px) {
-  .headerIndex {
-    width: 100%;
-    text-align: center;
-  }
-  .headerIndex .tagLine {
-    width: 100%;
-  }
-  .headerIndex .h1Index {
-    height: 100%;
-    padding-top: 20%;
-  }
-  .headerIndex .imgHeader {
-    display: none;
-  }
-  section .underTheSea .underSea {
-    width: 100%;
-  }
-  /* Index - addition section */
-  .newAdditions {
-    background-image: url(../assets/left-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .newAdditions .additionFlex .additionContainer {
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 15px;
-  }
-  .additionFlex {
-    height: 44vh;
-  }
-  .additionFlex .additionImg {
-    display: none;
-  }
-  .additionFlex .additionContainer {
-    width: 100%;
-    text-align: center;
-  }
-  .additionFlex .additionContainer a {
-    margin: 0 auto;
-  }
-  /* Index - Too many options section */
-  .manyOptions {
-    background-image: url(../assets/right-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 52vh;
-  }
-  .manyOptions .optionContainer {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 15px;
-    flex-basis: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .manyOptions .optionContainer h2, .manyOptions .optionContainer p {
-    text-align: center;
-  }
-  .manyOptions .optionContainer a {
-    margin: 0 auto;
-  }
-  .optionImg {
-    display: none;
-  }
-}
-/* Index - Links */
-section.links .linksContainer ul {
-  padding: 0;
-}
-section.links .linksContainer ul li {
-  padding: 1px 0 0 0;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* Index - Popular this month */
-.popularFlex {
-  padding: 50px 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.popularFlex .popularImgContainer {
-  display: none;
-}
-.popularFlex .popularContainer {
-  width: 100%;
-  margin-left: 0%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/*Index - Gallery */
-.galleryFlex div:nth-child(2) {
-  display: none;
-}
-
-/* Index
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  .headerIndex .index {
-    padding-top: 24px;
-    background-color: #C14242;
-    opacity: 0.8;
-  }
-  .headerIndex .logo.flexItems {
-    text-shadow: 1px 1px 0px burlywood;
-  }
-  .headerIndex .menuFlex {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-    border-left: 2px black solid;
-    position: relative;
-    bottom: 10%;
-  }
-  .headerIndex .h1Index {
-    height: 100%;
-    padding-top: 20%;
-    font-size: 8rem;
-    line-height: 88px;
-    text-shadow: 1px 1px 0px lightgrey;
-  }
-  /* Under the Sea */
-  section.underTheSea {
-    height: 75vh;
-  }
-  section.underTheSea h2 {
-    font-size: 4.2rem;
-  }
-  section.underTheSea .underSea a {
-    width: 44%;
-  }
-  /* New Additions */
-  .newAdditions {
-    background-image: url(../assets/left-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .newAdditions .additionFlex .additionContainer {
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 15px;
-  }
-  /* Too Many Options */
-  .manyOptions {
-    background-image: url(../assets/right-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 52vh;
-  }
-  .manyOptions .optionContainer {
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 15px;
-  }
-  /* Links */
-  .linksContainer h3 {
-    font-size: 3rem;
-    letter-spacing: 0.6px;
-    text-align: left;
-  }
-  .linksContainer p {
-    line-height: 22px;
-    margin: 8px;
-    text-align: left;
-  }
-  .linksContainer li:nth-child(1) {
-    border-right: 2px solid rgba(18, 15, 15, 0.1);
-    border-bottom: 2px solid rgba(18, 15, 15, 0.1);
-  }
-  .linksContainer li:nth-child(2) {
-    border-bottom: 2px solid rgba(18, 15, 15, 0.1);
-  }
-  .linksContainer li:nth-child(3) {
-    border-right: 2px solid rgba(18, 15, 15, 0.1);
-  }
-  /* Background Shoes */
-  .shoesBanner {
-    height: 30vh;
-  }
-  /*Popular this month */
-  .sectionPopular {
-    height: 75vh;
-  }
-  .sectionPopular h2 {
-    font-size: 4rem;
-  }
-  /* Index Gallery */
-  .indexGallery {
-    height: 32vh;
-  }
 }
